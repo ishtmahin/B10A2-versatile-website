@@ -2,8 +2,170 @@
 
 /* Shared styles */
 
+
 .inter {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.max-width {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.display-flex {
+  display: flex;
+}
+
+@font-face {
+  font-family: 'Miama';
+  src: url('miama/Miama.ttf') format('truetype');
+  font-weight: normal;
+  /* Or bold, etc. */
+  font-style: italic;
+  /* Or italic, etc. */
+}
+
+
+/* nav related styles */
+
+header {
+  background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+  background-color: rgba(0, 0, 0, 0.824);
+
+}
+
+nav {
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1080px;
+  margin: 0px auto;
+  padding: 10px
+}
+
+ul>li {
+  list-style: none;
+  padding: 10px;
+}
+
+ul>li :hover {
+  background-color: brown;
+}
+
+ul>li>a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.brand {
+  font-size: 2.2rem;
+  text-transform: italic;
+  font-weight: 800;
+  color: rgb(230, 83, 60);
+}
+
+.box {
+  width: 18px;
+  border: 2px solid #ffffff;
+  margin-bottom: 3px;
+  display: none;
+  margin-right: 10px;
+  border-radius: 10px;
+  ;
+}
+
+/* banner related styles */
+
+.banner {
+  max-width: 1080px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.banner-content {
+  max-width: 520px;
+}
+
+.banner-title {
+  font-size: 4.2rem;
+  ;
+  color: #ffffff;
+  font-weight: 800;
+  margin: 5px;
+}
+
+.sp-fonts {
+  font-family: 'Miama';
+
+}
+
+.banner-content {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 1rem;
+  font-weight: 400;
+}
+
+.btn-primary {
+  border-radius: 40px;
+  background: rgb(230, 83, 60);
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 1.2rem;
+  padding: 15px 40px;
+}
+
+.btn-secondary {
+  border-radius: 40px;
+  background: rgba(16, 16, 16, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  font-size: 1.2rem;
+  padding: 15px 40px;
+}
+
+.banner-image {
+  position: relative;
+}
+
+.video-tutorial {
+  position: absolute;
+  bottom: 100px;
+  left: -50px;
+  color: #ffffff;
+  width: 180px;
+  height: 80px;
+  border: 1px solid #ffffff;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+  text-align: left;
+  padding: 10px;
+}
+
+.round-box {
+  height: 40px;
+  width: 40px;
+  background: rgb(230, 83, 60);
+  border-radius: 20px;
+
+}
+
+/* for small devices */
+@media screen and (max-width: 576px) {
+  .box {
+    display: block;
   }
+
+  .nav-links {
+    display: none;
+  }
+}
