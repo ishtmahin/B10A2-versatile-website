@@ -27,7 +27,7 @@
   /* Or italic, etc. */
 }
 
-main{
+main {
   background-color: black;
   max-width: 1440px;
   padding: 10px;
@@ -142,7 +142,7 @@ ul>li>a {
   position: relative;
 }
 
-.banner-image img{
+.banner-image img {
   width: 100%;
 }
 
@@ -204,13 +204,23 @@ ul>li>a {
 }
 
 /* habbit related styles */
-.habbit{
- max-width: 1080px;
- margin: 100px auto 50px; 
-  
+
+.images-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
 }
 
-.section-title{
+.habbit {
+  max-width: 1080px;
+  margin: 100px auto 50px;
+}
+
+.habbit-pic {
+  border-radius: 50%;
+}
+
+.section-title {
   font-size: 3rem;
   color: #ffffff;
   font-weight: 900;
@@ -218,16 +228,31 @@ ul>li>a {
   margin: 15px;
 }
 
-.section-description{
+.section-description {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 400;
   text-align: center;
 }
 
-.pic-title{
+.pic-title {
   font-size: 1.2rem;
   color: #ffffff;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.pic-des {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  text-align: center;
+}
+
+.image-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* for small devices */
@@ -240,24 +265,24 @@ ul>li>a {
     display: none;
   }
 
-  .banner{
+  .banner, .images-container {
     flex-direction: column;
   }
 
-  .big-txt{
+  .big-txt {
     font-size: 1.1rem;
   }
 
-  .big-txt2{
+  .big-txt2 {
     font-size: 1.2rem;
   }
 
-  .video-tutorial{
+  .video-tutorial {
     bottom: 50px;
     left: 10px;
   }
 
-  .workout-videos{
+  .workout-videos {
     top: 70px;
     right: -10px;
   }
