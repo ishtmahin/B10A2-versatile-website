@@ -3,6 +3,7 @@
 /* Shared styles */
 
 
+
 .inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -249,11 +250,49 @@ ul>li>a {
   text-align: center;
 }
 
-.image-container{
+.image-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* Run extra mile realted styles  */
+.run-extra {
+  max-width: 1080px;
+  margin: 100px auto 50px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  padding: 35px;
+  align-items: center;
+}
+
+.run-container{
+  width: 550px;
+}
+
+.run-image {
+  height: 312px;
+  width: 366px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.img-effect{
+  width: 1200px;
+  height: 737px;
+ 
+}
+
+.run-image img {
+  position: relative;
+  top: -120px;
+  left: -560px;
+  
+}
+
+
 
 /* for small devices */
 @media screen and (max-width: 576px) {
@@ -265,7 +304,8 @@ ul>li>a {
     display: none;
   }
 
-  .banner, .images-container {
+  .banner,
+  .images-container {
     flex-direction: column;
   }
 
